@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/paginascomple.css">
+    <title>Recicle</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="menu">
+                <a href="../index.html">Página Inicial</a>
+                <a href="../PAGINAS/recicle.html">Recicle</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="principalsec">
+            <table class="tabela">
+                <tr>
+                  <td colspan="3"></td>
+                </tr>
+                <tr>
+                  <td><b>Escolha o material</b></td>
+                  <td>
+                    <select id="itens"> 
+                      <option value="../PAGINAS/plastico.html">Plástico</option>
+                      <option value="../PAGINAS/papel.html">Papel</option>
+                      <option value="../PAGINAS/vidro.html">Vidro</option>
+                      <option value="../PAGINAS/metais.html">Metais</option>
+                      <option value="../PAGINAS/organico.html">Orgânico</option>
+                      <option value="../PAGINAS/eletronico.html">Eletrônico</option>
+                      <option value="../PAGINAS/pano.html">Pano</option>
+                      <option value="../PAGINAS/oleo.html">Óleo de cozinha</option>
+                      <option value="../PAGINAS/bateria.html">Baterias</option>
+                      <option value="../PAGINAS/cartoes.html">Cartões</option>
+                    </select>
+                  </td>
+                  <td>
+                    <button class="botaotab" onclick=navegar()> ok </button>
+                  </td>
+                </tr>
+              </table>
+          </div>
+          <script>
+            function navegar() {
+                var selectedItem = document.getElementById("itens").value;
+                // Redirecionar para outra página com o item selecionado
+                window.location.href = selectedItem;
+            }
+        </script>
+        </div>
+    </main> 
+</body>
+</html>
